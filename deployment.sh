@@ -13,7 +13,7 @@ sudo sh /opt/get-docker.sh
 
 # Step 3 - Cloning the repo
 echo "Cloning the repo..."
-sudo git clone https://github.com/gbenachour/movies-gold.git /opt/movies-gold 
+sudo git clone git@github.com:1880160/movies-gold.git /opt/movies-gold 
 
 # Step 4 - Creating an .env file
 sudo cp /opt/movies-gold/.env.example /opt/movies-gold/.env
@@ -24,7 +24,7 @@ sudo docker compose -f /opt/movies-gold/compose.yaml up -d
 
 # Sleeping to wait for db to populate
 echo "Waiting for database to populate..."
-sleep 30
+sleep 10
 
 # Deleting opt files (repo, installation scripts etc...)
 sudo rm -rf /opt/*
