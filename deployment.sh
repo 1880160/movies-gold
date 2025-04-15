@@ -13,7 +13,7 @@ sudo sh /opt/get-docker.sh
 
 # Step 3 - Cloning the repo
 echo "Cloning the repo..."
-sudo git clone git@github.com:1880160/movies-gold.git /opt/movies-gold 
+sudo git clone https://github.com/1880160/movies-gold /opt/movies-gold 
 
 # Step 4 - Creating an .env file
 sudo cp /opt/movies-gold/.env.example /opt/movies-gold/.env
