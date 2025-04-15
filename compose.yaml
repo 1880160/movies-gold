@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: cmvghazi/movies-frontend:${FRONTEND_VERSION:-latest}
+    image: cmvghazi/movies-frontend:v1
     build:
       context: ./movies-frontend
     ports:
@@ -11,7 +11,7 @@ services:
       - movies-network
 
   backend:
-    image: cmvghazi/movies-backend:${BACKEND_VERSION:-latest}
+    image: cmvghazi/movies-backend:v1
     container_name: movies-backend
     build:
       context: ./movies-backend
